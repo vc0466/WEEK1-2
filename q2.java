@@ -1,12 +1,24 @@
-// Avarage Maths, Physics and Chemistry
+// Program to calculate the area of a triangle in square centimeters and square inches
+
+import java.util.Scanner;
+
 public class q2 {
     public static void main(String[] args) {
-        int maths = 94;
-        int physics = 95;
-        int chemistry = 96;
 
-        double average = (maths + physics + chemistry) / 3.0;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Sam’s average mark in PCM is " + average);
+        System.out.print("Enter base in cm: ");
+        float base = sc.nextFloat();
+
+        System.out.print("Enter height in cm: ");
+        float height = sc.nextFloat();
+
+        float areaCm = 0.5f * base * height;   // Area in sq cm
+        float areaIn = areaCm / (2.54f * 2.54f);   // Convert sq cm to sq inches
+
+        System.out.println("The Area of the triangle in sq in is " + areaIn + 
+                           " and sq cm is " + areaCm);
+
+        sc.close();
     }
 }
