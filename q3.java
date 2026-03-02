@@ -1,4 +1,4 @@
-// Program to find the side of a square using its perimeter
+// Program to calculate total income from salary and bonus
 
 import java.util.Scanner;
 
@@ -7,13 +7,17 @@ public class q3 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the perimeter of the square: ");
-        float perimeter = sc.nextFloat();
+        System.out.print("Enter salary (INR): ");
+        double salary = sc.nextDouble();
 
-        float side = perimeter / 4;   // Calculate side from perimeter
+        System.out.print("Enter bonus (INR): ");
+        double bonus = sc.nextDouble();
 
-        System.out.println("The length of the side is " + side +
-                           " whose perimeter is " + perimeter);
+        double totalIncome = salary + bonus;
+
+        System.out.println("The salary is INR " + salary +
+                           " and bonus is INR " + bonus +
+                           ". Hence Total Income is INR " + totalIncome);
 
         sc.close();
     }
