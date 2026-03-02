@@ -1,4 +1,4 @@
-// Program to calculate the area of a triangle in square centimeters and square inches
+// Program to convert Fahrenheit to Celsius
 
 import java.util.Scanner;
 
@@ -7,17 +7,13 @@ public class q2 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter base in cm: ");
-        float base = sc.nextFloat();
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double fahrenheit = sc.nextDouble();
 
-        System.out.print("Enter height in cm: ");
-        float height = sc.nextFloat();
+        double celsiusResult = (fahrenheit - 32) * 5 / 9;
 
-        float areaCm = 0.5f * base * height;   // Area in sq cm
-        float areaIn = areaCm / (2.54f * 2.54f);   // Convert sq cm to sq inches
-
-        System.out.println("The Area of the triangle in sq in is " + areaIn + 
-                           " and sq cm is " + areaCm);
+        System.out.println("The " + fahrenheit + " fahrenheit is " 
+                           + celsiusResult + " celsius");
 
         sc.close();
     }
