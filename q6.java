@@ -1,3 +1,4 @@
+// University discount
 public class q6 {
     public static void main(String[] args) {
         double fee = 125000;

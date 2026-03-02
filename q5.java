@@ -1,3 +1,4 @@
+// Pen distribution
 public class q5 {
     public static void main(String[] args) {
         int totalPens = 14;
