@@ -1,4 +1,4 @@
-// Program to calculate total purchase price based on unit price and quantity
+// Program to swap two numbers
 
 import java.util.Scanner;
 
@@ -7,17 +7,18 @@ public class q5 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter unit price (INR): ");
-        float unitPrice = sc.nextFloat();
+        System.out.print("Enter first number: ");
+        int number1 = sc.nextInt();
 
-        System.out.print("Enter quantity: ");
-        int quantity = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int number2 = sc.nextInt();
 
-        float totalPrice = unitPrice * quantity;   // Calculate total price
+        int temp = number1;
+        number1 = number2;
+        number2 = temp;
 
-        System.out.println("The total purchase price is INR " + totalPrice +
-                           " if the quantity " + quantity +
-                           " and unit price is INR " + unitPrice);
+        System.out.println("The swapped numbers are " 
+                           + number1 + " and " + number2);
 
         sc.close();
     }
