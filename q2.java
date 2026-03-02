@@ -1,11 +1,22 @@
+// Area of Triangle (sq cm and sq in)
+import java.util.Scanner;
+
 public class q2 {
     public static void main(String[] args) {
-        int maths = 94;
-        int physics = 95;
-        int chemistry = 96;
+        Scanner sc = new Scanner(System.in);
 
-        double average = (maths + physics + chemistry) / 3.0;
+        double base, height;
 
-        System.out.println("Sam’s average mark in PCM is " + average);
+        System.out.print("Enter base in cm: ");
+        base = sc.nextDouble();
+
+        System.out.print("Enter height in cm: ");
+        height = sc.nextDouble();
+
+        double areaCm = 0.5 * base * height;
+        double areaIn = areaCm / (2.54 * 2.54);
+
+        System.out.println("The Area of the triangle in sq in is "
+                + areaIn + " and sq cm is " + areaCm);
     }
 }
