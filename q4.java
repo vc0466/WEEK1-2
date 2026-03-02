@@ -1,14 +1,21 @@
+// Program to convert distance from feet to yards and miles
+
+import java.util.Scanner;
+
 public class q4 {
     public static void main(String[] args) {
-        double costPrice = 129;
-        double sellingPrice = 191;
 
-        double profit = sellingPrice - costPrice;
-        double profitPercentage = (profit / costPrice) * 100;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("The Cost Price is INR " + costPrice + 
-                           " and Selling Price is INR " + sellingPrice +
-                           "\nThe Profit is INR " + profit + 
-                           " and the Profit Percentage is " + profitPercentage);
+        System.out.print("Enter distance in feet: ");
+        float distanceInFeet = sc.nextFloat();
+
+        float yards = distanceInFeet / 3;          // Convert feet to yards
+        float miles = yards / 1760;                // Convert yards to miles
+
+        System.out.println("The distance in yards is " + yards +
+                           " while the distance in miles is " + miles);
+
+        sc.close();
     }
 }
