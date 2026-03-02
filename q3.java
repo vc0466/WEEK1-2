@@ -1,10 +1,20 @@
+// Program to find the side of a square using its perimeter
+
+import java.util.Scanner;
+
 public class q3 {
     public static void main(String[] args) {
-        double kilometers = 10.8;
-        double conversionFactor = 1.6;  // 1 km = 1.6 miles (as given)
 
-        double miles = kilometers * conversionFactor;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("The distance " + kilometers + " km in miles is " + miles);
+        System.out.print("Enter the perimeter of the square: ");
+        float perimeter = sc.nextFloat();
+
+        float side = perimeter / 4;   // Calculate side from perimeter
+
+        System.out.println("The length of the side is " + side +
+                           " whose perimeter is " + perimeter);
+
+        sc.close();
     }
 }
