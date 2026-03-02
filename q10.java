@@ -1,3 +1,4 @@
+// height in cms to feet and inches
 import java.util.Scanner;
 
 public class q10 {
