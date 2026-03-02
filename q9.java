@@ -1,3 +1,4 @@
+// University discount with fees is to be given by user
 import java.util.Scanner;
 
 public class q9 {
