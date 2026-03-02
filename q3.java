@@ -1,4 +1,4 @@
-public class KmToMiles {
+public class q3 {
     public static void main(String[] args) {
         double kilometers = 10.8;
         double conversionFactor = 1.6;  // 1 km = 1.6 miles (as given)
