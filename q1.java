@@ -1,10 +1,26 @@
+// q1.java
+import java.util.Scanner;
+
 public class q1 {
     public static void main(String[] args) {
-        int birthYear = 2000;
-        int currentYear = 2024;
+        Scanner sc = new Scanner(System.in);
 
-        int age = currentYear - birthYear;
+        double number1, number2;
 
-        System.out.println("Harry's age in 2024 is " + age);
+        System.out.print("Enter first number: ");
+        number1 = sc.nextDouble();
+
+        System.out.print("Enter second number: ");
+        number2 = sc.nextDouble();
+
+        double addition = number1 + number2;
+        double subtraction = number1 - number2;
+        double multiplication = number1 * number2;
+        double division = number1 / number2;
+
+        System.out.println("The addition, subtraction, multiplication, and division value of 2 numbers "
+                + number1 + " and " + number2 + " is "
+                + addition + ", " + subtraction + ", "
+                + multiplication + ", and " + division);
     }
 }
